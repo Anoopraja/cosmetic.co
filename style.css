@@ -14,7 +14,13 @@
     font-size: 1.1rem;
     font-weight: 100;
 }
-
+nav ul li:hover {
+    color: #2E3539;
+    cursor: pointer;    
+}
+nav img{
+    display: none;
+}
 nav {
     z-index: 4;
     position: sticky;
@@ -103,6 +109,7 @@ nav ul {
 .container2 .cover1 .box1 p{
     padding-top: 4rem;
     line-height: 2rem;
+    width: 540px
 }
 .container2 .cover1{
     display: flex;
@@ -188,4 +195,86 @@ nav ul {
     padding-top: 2rem;
     font-size: 1rem;
     font-weight: 400;
+}
+@media screen and (max-width: 1361px) {
+    *{
+        font-size: 10px;
+    }
+    nav {
+        gap: 10rem;
+        padding: 2rem 5rem;
+    }
+    .container1 .cover {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .container1 .cover .box1 {
+        padding: 4rem 0rem;
+        text-align: center;
+    }
+    .container1 .cover .box1 h1 {
+        font-size: 2.5rem;
+    }
+    .container1 .cover .box1 .btn {
+        margin-top: 4rem;
+    }
+    .container1 .cover .box2 {
+        width: auto;
+        position: relative;
+        bottom: 0;
+    }
+    
+    .container2 .cover1{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .container2 .cover2{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;    
+    }
+    .container3 .pro{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    *{
+        font-size: 8px;
+    }
+    nav {
+        gap: 5rem;
+        padding: 2rem 2rem;
+
+    }
+    .container2 .cover1 .box1{
+        text-align: center;
+
+    }
+    .container2 .cover1 .box1 p{
+        width: 40rem;
+    }
+    /* .container1 .cover .box2 img {
+        width: 40rem;
+    } */
+    img{
+        width: 40rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    nav ul{
+        display: none;
+    }
+    nav img{
+        width: 2rem;
+        display: block;
+    }
 }
