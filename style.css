@@ -278,3 +278,9 @@ nav ul {
         display: block;
     }
 }
+
+.btn:hover {
+    background: #151819;
+    color: white;
+    cursor: pointer;
+}
