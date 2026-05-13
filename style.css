@@ -199,6 +199,7 @@ nav ul {
 @media screen and (max-width: 1361px) {
     *{
         font-size: 10px;
+        border-radius: 4rem;
     }
     nav {
         gap: 10rem;
@@ -233,13 +234,14 @@ nav ul {
         align-items: center;
     }
     .container2 .cover2{
+        padding-top: 6rem;
         flex-direction: column;
         height: auto;
+        gap: 6rem;
         align-items: center;
         justify-content: center;    
     }
     .container3 .pro{
-        flex-direction: column;
         height: auto;
         align-items: center;
     }
@@ -267,6 +269,10 @@ nav ul {
     } */
     img{
         width: 40rem;
+    }
+    .container3 .pro{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 500px) {
